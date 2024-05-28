@@ -9,7 +9,7 @@ ActionMailer::Base.smtp_settings = {
   :password => Rails.application.credentials.sendgrid_mailer[:api_key_secret], # secret sendgrid API key
   :domain => Rails.application.credentials.sendgrid_mailer[:domain],
   :address => 'smtp.sendgrid.net',
-  :port => 465,   # 465	(for SSL connections). 25, 587	(for unencrypted/TLS connections)
+  :port => 587,   # 465	(for SSL connections). 25, 587	(for unencrypted/TLS connections)
   :authentication => :plain,
   :enable_starttls_auto => true
 }
