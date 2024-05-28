@@ -15,7 +15,7 @@ Rails.application.configure do
   config.eager_load = true
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { :host => "localhost:3000", :protocol => "https" }
+  config.action_mailer.default_url_options = { :host => "photo-app-0-svc-wei2spmagq-nw.a.run.app", :protocol => "https" }
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false

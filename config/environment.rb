@@ -5,11 +5,11 @@ require_relative "application"
 Rails.application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => 'apikey', # This is the string literal 'apikey', NOT the ID of your API key
-  :password => '<SENDGRID_API_KEY>', # This is the secret sendgrid API key which was issued during API key creation
-  :domain => 'yourdomain.com',
+  :user_name => Rails.application.credentials.sendgrid_mailer[:user_name],
+  :password => Rails.application.credentials.sendgrid_mailer[:api_key_secret], # secret sendgrid API key
+  :domain => Rails.application.credentials.sendgrid_mailer[:domain],
   :address => 'smtp.sendgrid.net',
-  :port => 587,
+  :port => 465,   # 465	(for SSL connections). 25, 587	(for unencrypted/TLS connections)
   :authentication => :plain,
   :enable_starttls_auto => true
 }
