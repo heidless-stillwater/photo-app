@@ -11,6 +11,10 @@ gem 'devise-bootstrap-views'
 gem 'jquery-rails'
 gem 'stripe'
 
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.7', '>= 6.1.7.7'
 # Use Puma as the app server
