@@ -1,0 +1,5 @@
+
+# Database
+
+echo "reading ENVIRONMENT variables "
+source ./config/.env-vars
