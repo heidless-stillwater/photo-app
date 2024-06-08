@@ -13,7 +13,7 @@ gem 'stripe'
 
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'fog'
+gem 'fog', '~> 1.34'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.7', '>= 6.1.7.7'

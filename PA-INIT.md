@@ -1,4 +1,12 @@
 
+- re-bundle
+  - upgrade to latest 'fog'
+
+- manifest.js
+  - review configuration
+
+
+
 # rails
 ```
 gem install rails --version=6.1.7.7
