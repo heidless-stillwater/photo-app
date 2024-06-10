@@ -1,6 +1,6 @@
 class UserNotifierMailer < ApplicationMailer
   class UserNotifierMailer < ApplicationMailer
-    default :from => 'support@fundingcloud.co.uk'
+    default :from => 'support@heidless.co.uk'
   
     # send a signup email to the user, pass in the user object that   contains the user's email address
     def send_signup_email(user)
@@ -11,3 +11,4 @@ class UserNotifierMailer < ApplicationMailer
     end
   end  
 end
+
