@@ -1,6 +1,6 @@
 class UserNotifierMailer < ApplicationMailer
   class UserNotifierMailer < ApplicationMailer
-    default :from => 'support@heidless.co.uk'
+    default :from => Rails.application.credentials.sendgrid_mailer[:mail_sender]
   
     # send a signup email to the user, pass in the user object that   contains the user's email address
     def send_signup_email(user)

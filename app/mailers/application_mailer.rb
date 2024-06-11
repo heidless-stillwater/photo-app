@@ -1,5 +1,5 @@
 class ApplicationMailer < ActionMailer::Base
-  default :from => 'support@heidless.co.uk'
+  default :from => Rails.application.credentials.sendgrid_mailer[:mail_sender]
   layout 'mailer'
 
 end
