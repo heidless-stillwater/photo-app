@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.2.2'
+ruby '2.6.3'
+
+gem 'net-ssh'
+gem 'xmlrpc'
 
 gem "net-http"
 gem "dotenv-rails", "~> 2.8"

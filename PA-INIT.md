@@ -10,6 +10,11 @@
 # rails
 ```
 gem install rails --version=6.1.7.7
+
+yarn install --check-files
+rails webpacker:install
+
+
 rails _6.1.7.7_ new photo-app
 
 gem install rails --version=6.0.6.1
