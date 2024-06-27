@@ -4,7 +4,8 @@
 # [START cloudrun_rails_base_image]
 # Pinning the OS to buster because the nodejs install script is buster-specific.
 # Be sure to update the nodejs install command if the base image OS is updated.
-FROM ruby:2.6.3
+# FROM ruby:2.6.3
+FROM ruby:3.2-buster
 # FROM ruby:2.6.3-slim-buster
 
 # [END cloudrun_rails_base_image]
@@ -22,7 +23,7 @@ WORKDIR /app
 # Application dependencies
 COPY Gemfile Gemfile.lock ./
 
-RUN gem update --system 3.2.3
+# RUN gem update --system 3.2.3
 
 RUN gem install bundler -v 2.4.22 && \
     bundle config set --local deployment 'true' && \
