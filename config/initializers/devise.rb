@@ -26,8 +26,6 @@ Devise.setup do |config|
   # with default "from" parameter.
   config.mailer_sender = Rails.application.credentials.sendgrid_mailer[:mail_sender]
 
-  # config.mailer_sender = Rails.application.credentials.sendgrid_mailer[:mail_sender]
-
   # config.action_mailer.raise_delivery_errors = true
 
   # Configure the class responsible to send e-mails.
