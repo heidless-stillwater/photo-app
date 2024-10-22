@@ -11,11 +11,11 @@ gem 'xmlrpc'
 
 gem "net-http"
 gem "dotenv-rails", "~> 2.8"
-gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'jquery-rails'
 gem 'stripe'
+gem "devise", "~> 4.9"
 
 gem 'carrierwave'
 gem 'mini_magick'
