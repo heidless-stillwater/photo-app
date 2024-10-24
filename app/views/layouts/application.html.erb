@@ -7,6 +7,13 @@
     <title><%= content_for?(:title) ? yield(:title) : "PhotoApp" %></title>
     <%= csrf_meta_tags %>
 
+
+    <link rel="icon" type="image/x-icon" href="https://storage.cloud.google.com/heidless-images-0/icons8-photo-48.png">
+    
+    <!--
+    <%= favicon_link_tag asset_path('icons8-photo-48.png') %>
+    -->
+
     <%= stylesheet_link_tag "application", :media => "all" %>
 
     <!-- For third-generation iPad with high-resolution Retina display: -->
